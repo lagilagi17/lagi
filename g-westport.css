@@ -1,0 +1,29 @@
+/* WESTPORT native city UI. Separate file for the game CSP. */
+#westport-native-ui{font:13px/1.5 system-ui,sans-serif;color:#f1eddf;position:absolute;inset:0;pointer-events:none;z-index:38}
+#westport-native-ui [hidden]{display:none!important}
+.wpt-location{position:absolute;left:12px;top:12px;min-height:44px;max-width:min(260px,calc(28% - 24px));padding:7px 11px;background:#10242d99;border:1px solid #c6b28266;border-radius:8px;color:#f1eddf;font:600 12px/1.3 system-ui,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;pointer-events:auto;cursor:pointer}
+.wpt-location:hover,.wpt-location[aria-expanded="true"]{background:#102c33e8;border-color:#c6b282}
+.wpt-location:focus-visible{outline:2px solid #f0d795;outline-offset:2px}
+.wpt-location-details{position:absolute;left:12px;top:60px;width:min(270px,calc(100% - 24px));padding:10px 12px;box-sizing:border-box;background:#102c33f0;border:1px solid #c6b28266;border-radius:8px;white-space:pre-line;font:12px/1.6 system-ui,sans-serif;pointer-events:auto;box-shadow:0 4px 18px #0004}
+.wpt-alert{position:absolute;left:12px;top:62px;max-width:calc(100% - 24px);box-sizing:border-box;padding:5px 9px;background:#722e24e8;border:1px solid #e69b74;border-radius:6px;font-size:11px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wpt-info-open .wpt-alert{top:auto;bottom:12px}
+.wpt-alert[data-state="preparing"],.wpt-alert[data-state="enroute"]{background:#182e3def;border-color:#759aaf}
+.wpt-alert[data-state="searching"]{background:#46351bed;border-color:#c8a86a}
+.wpt-alert[data-state="contact"]{background:#722e24ed;border-color:#ed9a7d}
+.wpt-use{position:absolute;left:50%;bottom:118px;transform:translateX(-50%);padding:10px 16px;border:1px solid #d0c395;border-radius:8px;background:#16353ceb;color:#fff;pointer-events:auto;cursor:pointer;font:inherit}
+.wpt-modal{pointer-events:auto;position:absolute;inset:0;display:grid;place-items:center;background:#081c26b8;padding:20px;box-sizing:border-box}
+.wpt-panel{width:min(620px,94vw);max-height:80vh;overflow:auto;background:#102c35;border:1px solid #708b8e;border-radius:14px;padding:20px;box-shadow:0 20px 70px #0008}
+.wpt-panel h2{margin:0 0 5px;font-size:21px}
+.wpt-panel p{margin:0 0 14px;color:#bacdc8}
+.wpt-floors{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.wpt-floors button,.wpt-close{font:inherit;text-align:left;cursor:pointer;padding:11px 12px;border:1px solid #5e777c;border-radius:7px;color:#e6ebe2;background:#23454e}
+.wpt-floors button:disabled{color:#102c35;background:#d3c294}
+.wpt-close{float:right;margin:0 0 8px 10px}
+.wpt-floor-number{display:inline-block;min-width:38px;color:#e1c485;font-weight:700}
+.wpt-floors button:disabled .wpt-floor-number{color:#102c35}
+@media(max-width:640px){.wpt-location{font-size:11px}
+.wpt-location-details{width:min(250px,calc(100% - 24px));font-size:11px}
+.wpt-use{bottom:112px;font-size:12px;max-width:70vw}
+.wpt-panel{padding:14px}
+.wpt-floors{grid-template-columns:1fr}
+}

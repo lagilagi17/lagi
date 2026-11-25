@@ -1,0 +1,2 @@
+@media(max-width:760px){.tabs:has(#tab-vocabulary){min-width:0;overflow-x:auto}.tabs:has(#tab-vocabulary) .tab{flex-shrink:0}}
+@media print{body:has(#tab-vocabulary[aria-selected="true"]) .topbar,body:has(#tab-vocabulary[aria-selected="true"]) .site-foot{display:none}}

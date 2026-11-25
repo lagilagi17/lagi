@@ -1,0 +1,25 @@
+.ov-cloud-trigger{display:grid;gap:5px;width:min(340px,100%);margin-top:9px}
+.ov-cloud-trigger .ov-cloud-launch{margin:0;width:100%;min-height:36px}
+.ov-cloud-short{font-size:10px;color:#9aaca4;line-height:1.4}
+.ov-panel.ov-cloud-open>:not(.ov-cloud-box){display:none!important}
+.ov-cloud-box{display:grid;gap:10px;width:min(440px,100%);text-align:left;padding:2px}
+.ov-cloud-box[hidden],.ov-cloud-box [hidden]{display:none!important}
+.ov-cloud-heading{margin:0;color:#f0f1e9;font-size:19px;font-weight:650;outline:0}
+.ov-cloud-status{margin:0;padding:8px 10px;border:1px solid #4a6254;border-radius:4px;font-size:12px;color:#c5e0cd;line-height:1.5;background:#26362c}
+.ov-cloud-status[data-state="conflict"],.ov-cloud-status[data-state="error"]{border-color:#856d3d;background:#3b3325;color:#f1d699}
+.ov-cloud-status[data-state="offline"],.ov-cloud-status[data-state="unconfigured"]{border-color:#586068;background:#293037;color:#c3ccd3}
+.ov-cloud-row{display:flex;gap:8px;flex-wrap:wrap}
+#pane-royale .ov-cloud-box .button{width:auto;min-width:0;min-height:38px;margin:0;padding:8px 11px;font-size:12px;line-height:1.4;box-shadow:none;border-radius:4px}
+.ov-cloud-row>.button{flex:1 1 125px}
+.ov-cloud-note{margin:0;color:#b6c0bc;font-size:11.5px;line-height:1.65;overflow-wrap:anywhere}
+.ov-cloud-code,.ov-cloud-code-input{width:100%;box-sizing:border-box;border:1px solid #677069;background:#18201b;border-radius:4px;padding:10px;color:#f0f4ec;font:12px ui-monospace,SFMono-Regular,Consolas,monospace;min-width:0}
+.ov-cloud-code{font-size:10px}
+.ov-cloud-code-input:focus{outline:2px solid #d4af69;outline-offset:2px}
+.ov-cloud-connection{display:grid;gap:8px;padding:11px;background:#222c25;border:1px solid #425246;border-radius:4px}
+.ov-cloud-connection label{display:grid;gap:7px;color:#dce4dd;font-size:12px}
+.ov-cloud-conflicts{display:grid;gap:10px}
+.ov-cloud-conflict{display:grid;gap:8px;padding:11px;border:1px solid #8c7547;border-radius:4px;background:#302c24}
+.ov-cloud-conflict b{font-size:13px;color:#ebd8aa}
+.ov-cloud-conflict p{margin:0;font-size:11px;line-height:1.6;color:#d4d4c9;overflow-wrap:anywhere}
+.ov-cloud-protection{display:grid;gap:8px;padding:10px;border:1px solid #758968;border-radius:4px;background:#283026}
+@media(max-width:520px){.ov-cloud-box{gap:8px}.ov-cloud-trigger{margin-top:5px}.ov-cloud-row{gap:6px}.ov-cloud-code-input{font-size:13px}.ov-cloud-short{font-size:9px}}
